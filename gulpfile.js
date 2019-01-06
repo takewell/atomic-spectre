@@ -11,30 +11,36 @@ var paths = {
   doc: './docs/src/scss/*.scss'
 };
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch('./**/*.scss', ['build']);
   gulp.watch('./**/*.scss', ['docs']);
   gulp.watch('./**/*.pug', ['docs']);
 });
 
-gulp.task('build', function() {
+gulp.task('build', function () {
   gulp.src(paths.source)
-    .pipe(sass({outputStyle: 'compact', precision: 10})
+    .pipe(sass({
+        outputStyle: 'compact',
+        precision: 10
+      })
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())
     .pipe(csscomb())
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('../src/css'))
     .pipe(cleancss())
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('../src/css'));
 });
 
-gulp.task('docs', function() {
+gulp.task('docs', function () {
   gulp.src(paths.doc)
-    .pipe(sass({outputStyle: 'compact', precision: 10})
+    .pipe(sass({
+        outputStyle: 'compact',
+        precision: 10
+      })
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())
@@ -46,7 +52,10 @@ gulp.task('docs', function() {
     }))
     .pipe(gulp.dest('./docs/dist'));
   gulp.src(paths.source)
-    .pipe(sass({outputStyle: 'compact', precision: 10})
+    .pipe(sass({
+        outputStyle: 'compact',
+        precision: 10
+      })
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())
