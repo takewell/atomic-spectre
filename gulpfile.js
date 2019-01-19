@@ -27,12 +27,12 @@ gulp.task('build', function () {
     )
     .pipe(autoprefixer())
     .pipe(csscomb())
-    .pipe(gulp.dest('../src/dist'))
+    .pipe(gulp.dest('./dist'))
     .pipe(cleancss())
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('../src/dist'));
+    .pipe(gulp.dest('../public'));
 });
 
 gulp.task('docs', function () {
