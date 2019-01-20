@@ -718,6 +718,12 @@ html:lang(ko),
   padding: .35rem .6rem;
 }
 
+.btn.btn-big {
+  font-size: 1.17rem;
+  height: 2.6rem;
+  padding: .455rem .78rem;
+}
+
 .btn.btn-block {
   display: block;
   width: 100%;
@@ -3287,6 +3293,13 @@ a.text-error:visited {
 .d-flex {
   display: flex; 
   display: -ms-flexbox;
+}
+
+.d-flex-center {
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .d-inline-flex {

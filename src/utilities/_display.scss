@@ -11,6 +11,10 @@
 .d-flex {
   display: flex;
 }
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+}
 .d-inline-flex {
   display: inline-flex;
 }
@@ -34,7 +38,7 @@
 }
 .text-assistive {
   border: 0;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
