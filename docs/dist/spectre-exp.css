@@ -16,8 +16,8 @@
 }
 
 .form-autocomplete .form-autocomplete-input.is-focused {
-  border-color: #5755d9; 
-  box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+  border-color: #f96854; 
+  box-shadow: 0 0 0 .1rem rgba(249, 104, 84, .2);
 }
 
 .form-autocomplete .form-autocomplete-input .form-input {
@@ -128,26 +128,26 @@
 }
 
 .calendar .calendar-date .date-item.date-today {
-  border-color: #e5e5f9;
-  color: #5755d9;
+  border-color: #f7f7f7;
+  color: #f96854;
 }
 
 .calendar .calendar-date .date-item:focus {
-  box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+  box-shadow: 0 0 0 .1rem rgba(249, 104, 84, .2);
 }
 
 .calendar .calendar-date .date-item:focus,
 .calendar .calendar-date .date-item:hover {
-  background: #fefeff;
-  border-color: #e5e5f9;
-  color: #5755d9;
+  background: white;
+  border-color: #f7f7f7;
+  color: #f96854;
   text-decoration: none;
 }
 
 .calendar .calendar-date .date-item:active,
 .calendar .calendar-date .date-item.active {
-  background: #4b48d6;
-  border-color: #3634d2;
+  background: #f85b45;
+  border-color: #f8452d;
   color: #fff;
 }
 
@@ -179,7 +179,7 @@
 }
 
 .calendar .calendar-range::before {
-  background: #f1f1fc;
+  background: white;
   content: "";
   height: 1.4rem;
   left: 0;
@@ -199,13 +199,13 @@
 
 .calendar .calendar-range.range-start .date-item,
 .calendar .calendar-range.range-end .date-item {
-  background: #4b48d6;
-  border-color: #3634d2;
+  background: #f85b45;
+  border-color: #f8452d;
   color: #fff;
 }
 
 .calendar .calendar-range .date-item {
-  color: #5755d9;
+  color: #f96854;
 }
 
 .calendar.calendar-lg .calendar-body {
@@ -535,7 +535,7 @@
 .filter .filter-tag#tag-6:checked ~ .filter-nav .chip[for="tag-6"],
 .filter .filter-tag#tag-7:checked ~ .filter-nav .chip[for="tag-7"],
 .filter .filter-tag#tag-8:checked ~ .filter-nav .chip[for="tag-8"] {
-  background: #5755d9;
+  background: #f96854;
   color: #fff;
 }
 
@@ -851,7 +851,7 @@
   background: #eef0f3;
   border: 0;
   border-radius: .1rem;
-  color: #5755d9;
+  color: #f96854;
   height: .2rem;
   position: relative;
   width: 100%;
@@ -863,18 +863,18 @@
 }
 
 .progress::-webkit-progress-value {
-  background: #5755d9;
+  background: #f96854;
   border-radius: .1rem;
 }
 
 .progress::-moz-progress-bar {
-  background: #5755d9;
+  background: #f96854;
   border-radius: .1rem;
 }
 
 .progress:indeterminate {
   animation: progress-indeterminate 1.5s linear infinite;
-  background: #eef0f3 linear-gradient(to right, #5755d9 30%, #eef0f3 30%) top left/150% 150% no-repeat;
+  background: #eef0f3 linear-gradient(to right, #f96854 30%, #eef0f3 30%) top left/150% 150% no-repeat;
 }
 
 .progress:indeterminate::-moz-progress-bar {
@@ -901,7 +901,7 @@
 }
 
 .slider:focus {
-  box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+  box-shadow: 0 0 0 .1rem rgba(249, 104, 84, .2);
   outline: none;
 }
 
@@ -911,7 +911,7 @@
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background: #5755d9;
+  background: #f96854;
   border: 0;
   border-radius: 50%;
   height: .6rem;
@@ -921,7 +921,7 @@
 }
 
 .slider::-moz-range-thumb {
-  background: #5755d9;
+  background: #f96854;
   border: 0;
   border-radius: 50%;
   height: .6rem;
@@ -930,7 +930,7 @@
 }
 
 .slider::-ms-thumb {
-  background: #5755d9;
+  background: #f96854;
   border: 0;
   border-radius: 50%;
   height: .6rem;
@@ -990,7 +990,7 @@
 }
 
 .slider::-ms-fill-lower {
-  background: #5755d9;
+  background: #f96854;
 }
 
 .timeline .timeline-item {
@@ -1036,7 +1036,7 @@
 }
 
 .timeline .timeline-item .timeline-icon::before {
-  border: .1rem solid #5755d9;
+  border: .1rem solid #f96854;
   border-radius: 50%;
   content: "";
   display: block;
@@ -1048,7 +1048,7 @@
 }
 
 .timeline .timeline-item .timeline-icon.icon-lg {
-  background: #5755d9;
+  background: #f96854;
   line-height: 1.2rem;
 }
 
