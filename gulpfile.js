@@ -38,7 +38,7 @@ gulp.task('build', function() {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build -t', function() {
+gulp.task('tbuild', function() {
   gulp
     .src(paths.source)
     .pipe(
